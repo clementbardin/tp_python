@@ -1,53 +1,61 @@
+import os
+
 def main():
     while True:
         choice = int(displayMenu())
-        if choice == 1:
-            requirePayment(3)
-        if choice == 2:
-            requirePayment(5)
-        if choice == 3:
-            requirePayment(4.5)
-        if choice == 4:
-            requirePayment(3)
-        if choice == 0:
-            break;
+        match choice:
+            case 1:
+                requirePayment(2)
+            case 2:
+                requirePayment(2)
+            case 3:
+                requirePayment(3.5)
+            case 4:
+                requirePayment(4)
+            case 5:
+                requirePayment(4)
+            case 6:
+                requirePayment(5)
+            case 0:
+                break
 
-        isContinue = input("Do you want to continue? y or n")
+        isContinue = input("Voulez-vous continuer ? y or n")
         if isContinue == "y":
             print("\n ------------------- \n")
         if isContinue == "n":
-            break;
+            break
 
-    print("Have a nice day.")
+    print("Passez une bonne journée.")
 
 
 def displayMenu():
-    print("1. Café noir | 3 coin")
-    print("2. Café au lait | 5 coin")
-    print("3. Chocolat au lait | 4.5 coin")
-    print("4. Thé | 3 coin")
-    print("0. Cancel")
-    choice = input("Hello, choose your drink :")
+    print("1. Café noir | 2 coin")
+    print("2. Café au lait | 2 coin")
+    print("3. Chocolat au lait | 3.5 coin")
+    print("4. Thé | 4 coin")
+    print("5. Ice-Tea | 4 coin")
+    print("6. Coca-Cola | 5 coin")
+    print("0. Quitter")
+    choice = input("Bonjour, choisissez votre boisson : ")
     return int(choice)
 
 
 def requirePayment(paymentAmount):
-    balence = 0;
-    while balence < paymentAmount:
-        print("You need to pay " + str(paymentAmount - balence) + " coins")
+    balance = 0
+    while balance < paymentAmount:
+        print("Vous devez payer " + str(paymentAmount - balance) + " coins")
         print("1. 0.5 coin")
         print("2. 1 coin")
         print("3. 2 coins")
-        choice = int(input("Please, insert your coins :"))
+        choice = int(input("Insérez vos coins : "))
         if choice == 1:
-            balence += 0.5
+            balance += 0.5
         if choice == 2:
-            balence += 1
+            balance += 1
         if choice == 3:
-            balence += 2
+            balance += 2
 
-    if balence > paymentAmount:
-        print("Here is back your " + str(balence - paymentAmount) + " coin")
-
+    if balance > paymentAmount:
+        print("Votre monnaie : " + str(balance - paymentAmount))
 
 main()
