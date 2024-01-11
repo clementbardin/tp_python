@@ -1,0 +1,25 @@
+{
+    "Café noir": {
+        "prix": 2
+    },
+
+    "Café au lait": {
+        "prix": 2
+    },
+
+    "Chocolat au lait": {
+        "prix": 3.5
+    },
+
+    "Thé": {
+        "prix": 4
+    },
+
+    "Ice-Tea": {
+        "prix": 4
+    },
+
+    "Coca-cola": {
+        "prix": 5
+    }
+}
