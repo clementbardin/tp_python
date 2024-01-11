@@ -1,25 +1,11 @@
 {
-    "Café noir": {
-        "prix": 2
-    },
-
-    "Café au lait": {
-        "prix": 2
-    },
-
-    "Chocolat au lait": {
-        "prix": 3.5
-    },
-
-    "Thé": {
-        "prix": 4
-    },
-
-    "Ice-Tea": {
-        "prix": 4
-    },
-
-    "Coca-cola": {
-        "prix": 5
-    }
+    "boissons": [
+        {"Nom de la boisson": "Café noir", "Prix de la boisson": 2},
+        {"Nom de la boisson": "Café au lait", "Prix de la boisson": 2},
+        {"Nom de la boisson": "Chocolat au lait", "Prix de la boisson": 3.5},
+        {"Nom de la boisson": "Thé", "Prix de la boisson": 4},
+        {"Nom de la boisson": "Ice-Tea", "Prix de la boisson": 5},
+        {"Nom de la boisson": "Coca-Cola", "Prix de la boisson": 5},
+        {"Nom de la boisson": "Red-Bull", "Prix de la boisson": 6}
+    ]
 }

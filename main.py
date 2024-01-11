@@ -1,4 +1,18 @@
-import os
+from json import*
+import csv
+
+donnees_json = ("boisson.json")
+
+with open(donnees_json, newline="", encoding="utf-8") as fichier_json:
+    lecteur_json = load(fichier_json)
+
+stock_csv = ("stock.csv")
+
+with open(stock_csv, newline="", encoding="utf-8") as stock:
+    lecteur_csv = csv.reader(stock)
+
+    for ligne in lecteur_csv:
+        print(ligne)
 
 def main():
     while True:
@@ -16,6 +30,8 @@ def main():
                 requirePayment(4)
             case 6:
                 requirePayment(5)
+            case 7:
+                requirePayment(6)
             case 0:
                 break
 
@@ -35,6 +51,7 @@ def displayMenu():
     print("4. Thé | 4 coin")
     print("5. Ice-Tea | 4 coin")
     print("6. Coca-Cola | 5 coin")
+    print("7. Redbull | 6 coin")
     print("0. Quitter")
     choice = input("Bonjour, choisissez votre boisson : ")
     return int(choice)
@@ -59,3 +76,4 @@ def requirePayment(paymentAmount):
         print("Votre monnaie : " + str(balance - paymentAmount))
 
 main()
+print(lecteur_json)
