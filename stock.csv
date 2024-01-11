@@ -1,8 +1,10 @@
 Présentation du distributeur
 Nom de la boisson,Prix de la boisson
-Votre solde
-Pièce de 0.5 centimes,5 euros
+0.5,10
+Pièce de 0.5 centimes
+1,10
 Pièce de 1 euros,10 euros
+2,10
 Pièce de 2 euros,20 euros
+5,10
 Billet de 5 euros,50 euros
-Solde de tout compte,85 euros

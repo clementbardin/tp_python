@@ -1,4 +1,4 @@
-from json import*
+from json import load
 import csv
 
 donnees_json = ("boisson.json")
@@ -76,4 +76,3 @@ def requirePayment(paymentAmount):
         print("Votre monnaie : " + str(balance - paymentAmount))
 
 main()
-print(lecteur_json)
